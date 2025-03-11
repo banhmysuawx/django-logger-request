@@ -6,11 +6,11 @@ Django Logger Request
 .. image:: https://img.shields.io/pypi/v/django_logger_request.svg
         :target: https://pypi.python.org/pypi/django_logger_request
 
-.. image:: https://img.shields.io/travis/banhmysuawx/django_logger_request.svg
-        :target: https://travis-ci.com/banhmysuawx/django_logger_request
+.. image:: https://app.travis-ci.com/banhmysuawx/django-logger-request.svg?token=4q9FsfAT1hGpHngJsyWh&branch=develop
+    :target: https://app.travis-ci.com/banhmysuawx/django-logger-request
 
 .. image:: https://readthedocs.org/projects/django-logger-request/badge/?version=latest
-        :target: https://django-logger-request.readthedocs.io/en/latest/?version=latest
+        :target: https://django-logger-request.readthedocs.io/en/latest/
         :alt: Documentation Status
 
 
