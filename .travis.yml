@@ -1,26 +1,15 @@
-# Config file for automatic testing at travis-ci.com
-
 language: python
-dist: focal  # Use Ubuntu 20.04 (Focal Fossa)
+dist: focal
 python:
-  - 3.11
-
-# Command to install dependencies, e.g. pip install -r requirements.txt --use-mirrors
+- 3.11
 install: pip install -U tox-travis
-
-# Command to run tests, e.g. python setup.py test
 script: tox
-
-# Assuming you have installed the travis-ci CLI tool, after you
-# create the Github repo and add it to Travis, run the
-# following command to finish PyPI deployment setup:
-# $ travis encrypt --add deploy.password
 deploy:
   provider: pypi
   distributions: sdist bdist_wheel
   user: banhmysuawx
   password:
-    secure: PLEASE_REPLACE_ME
+    secure: MXf1du7MI5sYzpcIV9K6vlQ7ffIfh6SFrk2GQEYAnNWrDZCRzhj4m1/07B34cUgOx/0C0JWwbLqY+6AZGrGSCpj/HDKagM50EJqiEnKwNf458G/q17qNvco0kWUWn3yOYpTskaEe5tzgzSLWbGk1O2D0n0bMX/+wwzxypZw9BhM8yfqSaK1AMVv7L4qkdA/dx7DZnSpnn92IbpE8PS/7cg6lHgCNNnedRhoVv2KmueIu6UGWEsnjIOJJ6D3jHb0dE0dJJB9miGVoOUMe5wB1i3ExczVj18boWTrAb30I8keWV5j16BYak16bAxcmyXKX4rAgtLem7QvNVxunBwvhNzftpUm8/+Fs3k/HLWKrJFAvLY7djHcntdmrynFjGlmG007ZtqwERqo8lSdNRm1bj59M69nbRCJyWlqXNZjW4gCAewkAL8BBW80aXgA7cR36jXjn7FRhvr8qB0veEhA4WiT/lonzQdRZiqtqq9KiFIU3yCJXJTetZMJiQgRH/Oj2ZohEZ7zhzYPvhEWgGNc+4jN8d+5o8Bik4EWcDqtfJBj5b0PTy2Z/mBb6aLuCinB41Uys9Cc6SiBalWTi6KNj8JLogvMfRllivrAMuv2AX3JnVwZO3oUwVhQknxn6ssxTRqK5mXH1JYO4YfoUuiB6ZcD2j78VrSkJWv442HUlXdg=
   on:
     tags: true
     repo: banhmysuawx/django_request_logger
